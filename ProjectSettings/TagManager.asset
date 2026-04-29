@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Player Building
+  - PauseMenu
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 3920064103
+    locked: 0
+  - name: WalkInFront
+    uniqueID: 3618900225
+    locked: 0
+  - name: Collision
+    uniqueID: 777351101
+    locked: 0
+  - name: Player
+    uniqueID: 1490958473
+    locked: 0
+  - name: Clickable Objects
+    uniqueID: 3048028813
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 3916514549
+    locked: 0
+  - name: Decor
+    uniqueID: 2336441521
+    locked: 0
+  m_RenderingLayers:
+  - Default

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d4190c61e349cab869929b60dd8ce, type: 3}
+  m_Name: IronSword
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponItem
+  itemName: Iron Sword
+  description: It's kinda rusty
+  icon: {fileID: 1904935819908782335, guid: c183ffc5123894abb9fc2a13af6a1c17, type: 3}
+  maxStackSize: 1
+  pickupPrefab: {fileID: 0}
+  damageBonus: 2

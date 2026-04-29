@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6664277065992975647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a9c21b70cb1a448918862bd6025e21, type: 3}
+  m_Name: Simple Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleDialogueNode
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -216}
+  ports:
+    keys:
+    - prevNode
+    - nextNode
+    values:
+    - _fieldName: prevNode
+      _node: {fileID: -6664277065992975647}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: optionA
+        node: {fileID: 9122729753056589096}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -6664277065992975647}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: prevNode
+        node: {fileID: 2961871208332967616}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  sentence: {fileID: 11400000, guid: 31a65863f32ea3b4a93e0ceba2e597fc, type: 2}
+  prevNode: {fileID: 0}
+  nextNode: {fileID: 0}
+--- !u!114 &-2012478069682441150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a9c21b70cb1a448918862bd6025e21, type: 3}
+  m_Name: Simple Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleDialogueNode
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -56}
+  ports:
+    keys:
+    - prevNode
+    - nextNode
+    values:
+    - _fieldName: prevNode
+      _node: {fileID: -2012478069682441150}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: optionB
+        node: {fileID: 9122729753056589096}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -2012478069682441150}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: prevNode
+        node: {fileID: 2961871208332967616}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  sentence: {fileID: 11400000, guid: d69aa07ba3c95444b88a3ad46333fe44, type: 2}
+  prevNode: {fileID: 0}
+  nextNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7793c6a5fcbd50c4cb0ecab6dc6aedcb, type: 3}
+  m_Name: MonkLostDialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 9122729753056589096}
+  - {fileID: -6664277065992975647}
+  - {fileID: -2012478069682441150}
+  - {fileID: 2961871208332967616}
+--- !u!114 &2961871208332967616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee761853634e270489202ec9035cbef8, type: 3}
+  m_Name: Dialogue Control
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueControlNode
+  graph: {fileID: 11400000}
+  position: {x: 376, y: -136}
+  ports:
+    keys:
+    - prevNode
+    values:
+    - _fieldName: prevNode
+      _node: {fileID: 2961871208332967616}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: -2012478069682441150}
+        reroutePoints: []
+      - fieldName: nextNode
+        node: {fileID: -6664277065992975647}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  dialogueControl: 0
+  prevNode: {fileID: 0}
+--- !u!114 &9122729753056589096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364cd6da4a1f0614db391e2d45e3ac3e, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: Assembly-CSharp::OptionDialogueNode
+  graph: {fileID: 11400000}
+  position: {x: -360, y: -216}
+  ports:
+    keys:
+    - prevNode
+    - optionA
+    - optionB
+    values:
+    - _fieldName: prevNode
+      _node: {fileID: 9122729753056589096}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: optionA
+      _node: {fileID: 9122729753056589096}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: prevNode
+        node: {fileID: -6664277065992975647}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: optionB
+      _node: {fileID: 9122729753056589096}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: prevNode
+        node: {fileID: -2012478069682441150}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  speaker: {fileID: 11400000, guid: ece65070a973f2e4997cf7ec47a427c3, type: 2}
+  responses: {fileID: 11400000, guid: a4d5d98d9b8371b43b2e9afa19b04490, type: 2}
+  prevNode: {fileID: 0}
+  optionA: {fileID: 0}
+  optionB: {fileID: 0}

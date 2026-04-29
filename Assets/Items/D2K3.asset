@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac63141e2c044d1d9f39cc69a580de8, type: 3}
+  m_Name: D2K3
+  m_EditorClassIdentifier: Assembly-CSharp::KeyItem
+  itemName: Dungeon2Key3
+  description: 
+  icon: {fileID: 3275407576765064038, guid: 465fcf043936a1f479d943460f0fe606, type: 3}
+  maxStackSize: 99
+  pickupPrefab: {fileID: 0}
+  keyID: D2K3

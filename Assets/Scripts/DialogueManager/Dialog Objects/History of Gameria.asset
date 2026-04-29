@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5df1054b3b04644895c017f53191d3, type: 3}
+  m_Name: History of Gameria
+  m_EditorClassIdentifier: 
+  m_name: Note
+  portrait: {fileID: 6660783624410144326, guid: 72d6721947b184740bc0188ae413538a, type: 3}
+  talkingClip: {fileID: 8300000, guid: 84a640c09c50b40898a0744dfb4175c7, type: 3}
+  sentences:
+  - 'Old bones laid piled atop each other in a crude display of warning. An old sign
+    written in some holy language reads:'
+  - A greate dragone hath torn our landes to soundre. Onliye a hero equaliye az graete
+    shall save us....
